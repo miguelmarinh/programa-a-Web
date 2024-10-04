@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto</title>
+</head>
+
+<body>
+    <strong>Este texto é importante</strong>
+    <p>A <b>borracha</b> está na mesa</p>
+    <i>Mandioca esculenta</i> <br> <!-- o texto fica em italico -->
+
+    <em>é o nome cientifeco da Mandioca</em> <br> <!-- o texto fica em italico -->
+
+    <u>Este texto está sulbinhado</u> <!-- o texto fica sulbinhado -->
+    <p>está palavra está <u>sulbinhado</u></p> <!-- a palavtra fica sublinada -->
+
+    <p>n<sup>2</sup></p> <!-- deixa o deixo em sobrescrito -->
+    <p>eu <sup>estou em</sup>sala</p> <!-- tbm-->
+
+    <p>2 <sub>x</sub>+ 3 <sub>x</sub> - 10 <sub>xy</sub></p> <!-- deixa a palavra em subscrito -->
+    <p> Meu nome peso é 75 <sub>kg</sub></p> <!-- mesma merda -->
+
+    <p>Meu <ins>gato</ins> é <ins>laranja</ins></p> <!-- deixa a palavras ou insirido -->
+
+    <del> Este texto será removido.</del> <br> <br> <!-- indica texo deletado (sei lá que porra é essa) -->
+
+    <small>Este texto é menor.</small> <!-- Diminui o tamanho da menor -->
+
+    <p>Procure a palavra <mark> chave</mark> neste texto</p>
+    <!-- Marca texto com um fundo colorido, geralmente amarelo, para destacar. -->
+
+    <audio controls>
+        <source src="creative-technology-showreel-241274.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+    <audio id="meuAudio" src="creative-technology-showreel-241274.mp3" controls></audio> <br><br>
+
+    <button onclick="playAudio()">Play</button>
+    <button onclick="stopAudio()">Stop</button>
+    <button onclick="loopAudio()">Loop</button>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("meuAudio");
+            audio.play();
+        }
+        function stopAudio() {
+            var audio = document.getElementById("meuAudio");
+            audio.stop();
+        }
+        function loopAudio() {
+            var audio = document.getElementById("meuAudio");
+            audio.loop() = true;
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
